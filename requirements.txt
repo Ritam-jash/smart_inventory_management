@@ -1,0 +1,10 @@
+---
+
+### requirements.txt
+
+For the `requirements.txt` file, you would typically include Flask and MySQL-related libraries. Here’s a basic example:
+
+```plaintext
+Flask==2.2.2
+Flask-MySQLdb==0.2.0
+mysqlclient==2.1.1

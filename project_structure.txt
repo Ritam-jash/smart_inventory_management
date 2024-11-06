@@ -1,0 +1,19 @@
+/smart_inventory_management
+├── app/
+│   ├── __init__.py          # Initialize the Flask app
+│   ├── routes.py            # Define all the routes (e.g., add item, delete item)
+│   ├── models.py            # Define the database models (e.g., Product, Supplier)
+├── static/
+│   ├── css/
+│   │   └── styles.css       # Custom styles
+│   └── js/
+│       └── scripts.js       # Optional JS for interactivity
+├── templates/
+│   ├── base.html            # Base layout template
+│   ├── dashboard.html       # Inventory dashboard template
+│   ├── add_item.html        # Add new item form template
+│   ├── edit_item.html       # Edit item form template
+├── config.py                # Configuration for database and secret keys
+├── run.py                   # Main entry point to run the Flask app
+├── requirements.txt         # List of dependencies for the project
+└── README.md                # Project documentation

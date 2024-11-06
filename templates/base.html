@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+<style>
+    /* General Layout */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #343a40;
+    }
+    header {
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 1rem;
+        text-align: center;
+    }
+    nav a {
+        color: #ffffff;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    main {
+        padding: 2rem;
+        max-width: 900px;
+        margin: auto;
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Inventory Management System</h1>
+        <nav>
+            <a href="{{ url_for('app_routes.dashboard') }}">Dashboard</a>
+            <a href="{{ url_for('app_routes.add_item_form') }}">Add Item</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
